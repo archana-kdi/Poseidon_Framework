@@ -1,10 +1,10 @@
-﻿module HelloApplication {
+﻿module SimplePoseidonApp {
     angular
-        .module('HelloApplication')
+        .module('SimplePoseidonApp')
         .config(function ($translateProvider: ng.translate.ITranslateProvider) {
             $translateProvider.translations('en', {
-                'HelloApplication': {
-                    Title: 'HelloApplication'
+                'SimplePoseidonApp': {
+                    Title: 'SimplePoseidonApp'
                 }
             });
         });        

@@ -35,15 +35,24 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".npmrc" />
+    <Content Include=".npmignore" />
     <Content Include="package.json" />
     <Content Include="styles\application.scss" />
-    <Content Include="HelloApplication.manifest.json" />
+    <Content Include="SimplePoseidonApp.manifest.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="install-module.cmd" />
     <None Include="uninstall-module.cmd" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\HelloApplication.module.ts" />
+    <TypeScriptCompile Include="app\SimplePoseidonApp.module.ts" />
     <TypeScriptCompile Include="app\localization\Locale-en.ts" />
+    <TypeScriptCompile Include="app\SimplePoseidonAppController.ts" />
     <TypeScriptCompile Include="app\_references.ts" />
     <TypeScriptCompile Include="_references.ts" />
   </ItemGroup>
@@ -63,7 +72,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64419</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Server/Modules/HelloApplication</IISUrl>
+          <IISUrl>http://localhost/Poseidon/Server/Modules/SimplePoseidonApp</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -123,7 +132,7 @@
     </CopyAllFilesToSingleFolderForMsdeployDependsOn>
   </PropertyGroup>
   <Target Name="GulpBuild" DependsOnTargets="CompileTypeScript">
-    <Exec Command="npm install" />
+    <!--<Exec Command="npm install" />-->
     <Exec Command="gulp build -r" Condition="$(Configuration) == 'Release'" />
     <Exec Command="gulp build" Condition="$(Configuration) != 'Release'" />
     <ItemGroup>

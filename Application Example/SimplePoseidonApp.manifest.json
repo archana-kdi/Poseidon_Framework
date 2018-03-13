@@ -1,10 +1,10 @@
 ﻿{
-  "name": "HelloApplication",
-  "id": "3af762bf-db0a-4ab7-a288-ef13e4691328",
+  "name": "SimplePoseidonApp",
+  "id": "6cebe3af-27de-4304-9a66-7cfa105f278d",
   "version": "1.0.0",
   "isApplication": true,
   "dependencies": [ ],
-  "root": "HelloApplication/build/",
+  "root": "SimplePoseidonApp/build/",
   "permissions": [
     {
       "permissionId": "4b6695be-2730-4f9e-a5c6-e2b8f51314cd",

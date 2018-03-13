@@ -26,6 +26,8 @@ if (args.release) {
 else {
     gulp.task("build", function (callback) {
         sequence(['compile:styles', 'compile:templates', 'compile:typescript', 'bundle:dependencies', 'generate:database-scripts'],
+            //'compile:tests',
+            //'run:unittests',
             callback);
     });
 }
@@ -104,6 +106,7 @@ gulp.task('optimize', function () {
 });
 
 gulp.task('bundle:dependencies', ['clean:dependencies'], function () {
+    // TODO: With no bundle information in config this halts gulp 
     return bundle(config).libraries();
 });
 
@@ -114,5 +117,6 @@ gulp.task('clean:dependencies', function () {
 // Publish
 gulp.task('publish', ['build'], function () {
     console.log('publish');
+    // TODO: If release, should publish as a different package
     return publish(config);
 });
