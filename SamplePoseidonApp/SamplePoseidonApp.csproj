@@ -37,20 +37,14 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="styles\application.scss" />
-    <Content Include="SimplePoseidonApp.manifest.json" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    <Content Include="SamplePoseidonApp.manifest.json" />
     <None Include="install-module.cmd" />
     <None Include="uninstall-module.cmd" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\SimplePoseidonApp.module.ts" />
+    <TypeScriptCompile Include="app\SamplePoseidonApp.module.ts" />
     <TypeScriptCompile Include="app\localization\Locale-en.ts" />
-    <TypeScriptCompile Include="app\SimplePoseidonAppController.ts" />
+    <TypeScriptCompile Include="app\SamplePoseidonAppController.ts" />
     <TypeScriptCompile Include="app\_references.ts" />
     <TypeScriptCompile Include="_references.ts" />
   </ItemGroup>
@@ -66,11 +60,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64419</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Poseidon/Server/Modules/SimplePoseidonApp</IISUrl>
+          <IISUrl>http://localhost/Poseidon/Server/Modules/SamplePoseidonApp</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

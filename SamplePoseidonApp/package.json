@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "SimplePoseidonApp",
+    "name": "SamplePoseidonApp",
     "dependencies": {
         "kongsberg-poseidon-client": "1.4.*"
     },

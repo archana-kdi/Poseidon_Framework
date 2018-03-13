@@ -1,25 +1,25 @@
-﻿module SimplePoseidonApp {
+﻿module SamplePoseidonApp {
     "use strict";
 
-    export interface ISimpleAppUserSettings {
+    export interface ISampleAppUserSettings {
         name?: string;
         age?: number;
     }
 
-    export interface ISimpleAppUserScope {
+    export interface ISampleAppUserScope {
         isLabelShown: boolean;
         isSuccessAlertShown: boolean;
         isSettingTypeExisting: boolean;
-        settingValue: ISimpleAppUserSettings;
+        settingValue: ISampleAppUserSettings;
     }
 
-    export class SimplePoseidonAppController {
+    export class SamplePoseidonAppController {
         private readonly MODULE_ID: string = '6cebe3af-27de-4304-9a66-7cfa105f278d';
         private readonly SETTING_NAME: string = 'PersonSetting';
 
         static $inject = ['$scope', 'userSettings'];
 
-        constructor(private $scope: ISimpleAppUserScope, private userSettings: Poseidon.IUserSettings) {
+        constructor(private $scope: ISampleAppUserScope, private userSettings: Poseidon.IUserSettings) {
             $scope.settingValue = {};
             this.get();
             this.$scope.isSuccessAlertShown = false;
@@ -35,12 +35,17 @@
         }
 
         public get(): void {
-            this.userSettings.get(this.MODULE_ID, this.SETTING_NAME).then((res: ISimpleAppUserSettings) => {
-                this.$scope.settingValue.name = res.name;
-                this.$scope.settingValue.age = res.age;
-                this.$scope.isLabelShown = false;
-            }).catch(reason => {
-                this.$scope.isLabelShown = true;
+            this.userSettings.get(this.MODULE_ID, this.SETTING_NAME).then((res: ISampleAppUserSettings) => {
+                if (res == null)
+                {
+                    this.$scope.isLabelShown = true;
+                }
+                else
+                {
+                    this.$scope.settingValue.name = res.name;
+                    this.$scope.settingValue.age = res.age;
+                    this.$scope.isLabelShown = false;
+                }
             });
         }
 
@@ -48,5 +53,5 @@
             return this.userSettings.set(this.MODULE_ID, this.SETTING_NAME, this.$scope.settingValue);
         }
     }
-    angular.module('SimplePoseidonApp').controller('SimplePoseidonAppController', SimplePoseidonAppController);
+    angular.module('SamplePoseidonApp').controller('SamplePoseidonAppController', SamplePoseidonAppController);
 }

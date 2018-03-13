@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePoseidonApp", "Application Example\SimplePoseidonApp.csproj", "{297BA2D8-7815-4AEC-BCC3-8E4E8EACC403}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplePoseidonApp", "SamplePoseidonApp\SamplePoseidonApp.csproj", "{297BA2D8-7815-4AEC-BCC3-8E4E8EACC403}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {13FB7794-D699-431E-B727-40C9202804B6}
+		SolutionGuid = {B650692E-1D05-49AB-A4B3-B8CABDEB40C4}
 	EndGlobalSection
 EndGlobal

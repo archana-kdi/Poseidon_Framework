@@ -1,5 +1,5 @@
 @ECHO OFF
 SET moduleInstaller="%programfiles(x86)%/KDI/Poseidon/Poseidon.Module.Installer.exe"
-SET moduleId=6cebe3af-27de-4304-9a66-7cfa105f278d
+SET moduleId=657da9d1-82f3-4a9e-bd17-c0f2df6c15ca
 CALL %moduleInstaller% uninstall %moduleId%
 PAUSE

@@ -1,7 +1,7 @@
-﻿<div class="container" ng-controller="SimplePoseidonAppController as vm">
+﻿<div class="container" ng-controller="SamplePoseidonAppController as vm">
     <h1 ng-show="isLabelShown">No value stored in User Setting</h1>
     <h1 ng-show="!isLabelShown">User Settings are available. The name of the user is&nbsp;<u><i>{{settingValue.name}}</i></u>. The age of the user is:&nbsp;<u><i>{{settingValue.age}}</i></u></h1>
-   
+
     <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" class="form-control" ng-model="settingValue.name" name="name" />
@@ -17,5 +17,4 @@
     </div>
 
     <div ng-show="isSuccessAlertShown" class="alert alert-success form-group" role="alert">You successfully have stored your personal details!</div>
-    <div ng-show="isDangerAlertShown" class="alert alert-danger" role="alert">Failed to store your personal details.</div>
 </div>

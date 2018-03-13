@@ -1,10 +1,10 @@
 ﻿{
-  "name": "SimplePoseidonApp",
-  "id": "6cebe3af-27de-4304-9a66-7cfa105f278d",
+  "name": "SamplePoseidonApp",
+  "id": "657da9d1-82f3-4a9e-bd17-c0f2df6c15ca",
   "version": "1.0.0",
   "isApplication": true,
   "dependencies": [ ],
-  "root": "SimplePoseidonApp/build/",
+  "root": "SamplePoseidonApp/build/",
   "permissions": [
     {
       "permissionId": "4b6695be-2730-4f9e-a5c6-e2b8f51314cd",

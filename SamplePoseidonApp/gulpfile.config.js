@@ -1,5 +1,5 @@
 ﻿module.exports = function () {
-    var applicationName = 'SimplePoseidonApp';
+    var applicationName = 'SamplePoseidonApp';
     var basePaths = {
         build: './build',
         app: './app',
