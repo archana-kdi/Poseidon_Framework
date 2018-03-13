@@ -35,8 +35,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".npmrc" />
-    <Content Include=".npmignore" />
     <Content Include="package.json" />
     <Content Include="styles\application.scss" />
     <Content Include="SimplePoseidonApp.manifest.json" />
@@ -68,7 +66,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64419</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
