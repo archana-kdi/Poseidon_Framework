@@ -13,16 +13,16 @@
         "gulp": "^3.9.0",
         "gulp-sequence": "^0.4.6",
         "gulp-task-listing": "^1.0.1",
-        "poseidon-gulp-bundle": "1.4.*",
-        "poseidon-gulp-log": "1.4.*",
-        "poseidon-gulp-publish": "1.4.*",
-        "poseidon-gulp-scripts": "1.4.*",
-        "poseidon-gulp-styles": "1.4.*",
-        "poseidon-gulp-templates": "1.4.*",
-        "poseidon-gulp-typescript": "1.4.*",
+        "kognifai-poseidon-gulp-bundle": "1.4.*",
+        "kognifai-poseidon-gulp-log": "1.4.*",
+        "kognifai-poseidon-gulp-publish": "1.4.*",
+        "kognifai-poseidon-gulp-scripts": "1.4.*",
+        "kognifai-poseidon-gulp-styles": "1.4.*",
+        "kognifai-poseidon-gulp-templates": "1.4.*",
+        "kognifai-poseidon-gulp-typescript": "1.4.*",
         "yargs": "^3.27.0"
     },
     "publishConfig": {
-        "registry": "http://157.237.139.171/artifactory/api/npm/npm-local"
+        "registry": "https://kdi.jfrog.io/kdi/api/npm/npm-local/"
     }
 }
