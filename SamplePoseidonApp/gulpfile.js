@@ -1,16 +1,16 @@
-﻿var args = require('yargs').alias('r', 'release').argv;
+var args = require('yargs').alias('r', 'release').argv;
 var config = require('./gulpfile.config')();
 var gulp = require('gulp');
 var listing = require('gulp-task-listing');
 var sequence = require('gulp-sequence');
 
-var publish = require('poseidon-gulp-publish');
-var styles = require('poseidon-gulp-styles');
-var log = require('poseidon-gulp-log');
-var templates = require('poseidon-gulp-templates');
-var typescript = require('poseidon-gulp-typescript');
-var bundle = require('poseidon-gulp-bundle');
-var scripts = require('poseidon-gulp-scripts');
+var publish = require('kognifai-poseidon-gulp-publish');
+var styles = require('kognifai-poseidon-gulp-styles');
+var log = require('kognifai-poseidon-gulp-log');
+var templates = require('kognifai-poseidon-gulp-templates');
+var typescript = require('kognifai-poseidon-gulp-typescript');
+var bundle = require('kognifai-poseidon-gulp-bundle');
+var scripts = require('kognifai-poseidon-gulp-scripts');
 
 gulp.task('default', ['help']);
 
