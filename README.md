@@ -5,4 +5,4 @@ Find information, instructions and guidelines on how to develop high quality app
 After creating an empty kognifai application framework application based on the Poseidon template, you will get a solution structure. This article provides a sample code for a  Hello World application that you can use to jumpstart your development.
 
 # License
-[View the license information here](https://github.com/kognifai/Core_Documentation/blob/master/LinkedPages/License.md).  
+Read the copyright information and terms and conditions for Usage and Development of the software [here]( https://github.com/kognifai/Core_Documentation/blob/master/LinkedPages/License.md)
